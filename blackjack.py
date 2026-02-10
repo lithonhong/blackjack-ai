@@ -61,8 +61,6 @@ class Blackjack():
         self.hands = list()
         for _ in range(self.num_players):
             dealing_hand = [self.draw_card(), self.draw_card()]
-            while self.evaluate_hand(dealing_hand) == 21:
-                dealing_hand = [self.draw_card(), self.draw_card()]
             self.hands.append(dealing_hand)
 
         if self.notif:
