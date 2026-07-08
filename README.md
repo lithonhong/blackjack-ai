@@ -58,7 +58,7 @@ Instead, the agent learns from past experiences by trying different actions and 
 
 The Q in Q-learning refers to the function it computes: its expected reward, `Q(s, a)`, of an action (`a`) given a state (`s`). Said function is defined as such:
 
-$$Q(s, a) \leftarrow Q(s, a) + \alpha (r + \gamma max(Q(s', a')) - Q(s, a))$$
+$$Q(s, a) \leftarrow Q(s, a) + \alpha (r + \gamma \max{(Q(s', a'))} - Q(s, a))$$
 
 where `α` is the learning rate, `γ` is the discount factor, and `r` is the reward. `s', a'` refers to the state/action pair of the next move.
 
